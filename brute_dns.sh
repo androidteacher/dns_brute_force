@@ -28,6 +28,6 @@ if [ -z "$ns" ] || [ -z "$target"]; then
         exit 1
 fi
 
-python3 dnsrecon.py -n $ns -d $target -D subdomains-top1million-5000.txt -t brt
+python3 dnsrecon.py -n $ns -d $target -D subdomains-top1million-5000.txt -t brt -c current_list.csv
 
 
